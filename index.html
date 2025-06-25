@@ -2,79 +2,144 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Amazon & Prime Deals</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Register Your Device</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background-color: #ffffff;
+      padding: 30px 20px;
+      border-radius: 14px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      max-width: 420px;
+      width: 90%;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #222;
+    }
+
+    .subtitle,
+    .instruction {
+      font-size: 13px;
+      color: #555;
+      margin-bottom: 8px;
+    }
+
+    form {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: center;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      font-size: 15px;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    button {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 22px;
+      font-size: 15px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .steps {
+      margin-top: 25px;
+      text-align: left;
+    }
+
+    .steps h2 {
+      font-size: 16px;
+      color: #007bff;
+      margin-bottom: 8px;
+    }
+
+    .steps ul {
+      list-style: disc;
+      padding-left: 20px;
+      color: #444;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 18px;
+      }
+
+      .subtitle,
+      .instruction {
+        font-size: 13px;
+      }
+
+      .steps h2 {
+        font-size: 15px;
+      }
+
+      .steps ul {
+        font-size: 13px;
+      }
+
+      button {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
-<body class="bg-gray-50 font-sans text-gray-800">
-  <!-- Header -->
-  <header class="bg-yellow-500 p-4 shadow-md">
-    <div class="container mx-auto flex justify-between items-center">
-      <h1 class="text-xl font-bold text-white">Top Deals USA</h1>
-      <nav class="space-x-4">
-        <a href="#amazon" class="text-white hover:underline">Amazon</a>
-        <a href="#prime" class="text-white hover:underline">Prime Video</a>
-      </nav>
+<body>
+  <div class="container">
+    <h1>Register Your Device</h1>
+    <p class="subtitle">Register your compatible TV or devices</p>
+    <p class="instruction">Enter the code shown on your device to register it with your account</p>
+
+    <form>
+      <input type="text" id="code" name="code" placeholder="Enter Code" required />
+      <button type="submit">Register</button>
+    </form>
+
+    <div class="steps">
+      <h2>Steps to Register Your Device</h2>
+      <ul>
+        <li>Step 1: Open the app on your TV or device.</li>
+        <li>Step 2: Select "Register on the website."</li>
+        <li>Step 3: Your registration code appears on the left of the screen.</li>
+      </ul>
     </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="bg-white py-12 text-center">
-    <h2 class="text-3xl font-bold mb-4">Best Affiliate Deals from Amazon & Prime</h2>
-    <p class="text-lg text-gray-600 max-w-xl mx-auto">Explore the best affiliate offers available in the USA. These deals include products and services that are highly rated and frequently purchased. All links provided are affiliate links that help support this site without any extra cost to you.</p>
-  </section>
-
-  <!-- Amazon Products -->
-  <section id="amazon" class="py-10 px-4 bg-gray-100">
-    <div class="container mx-auto">
-      <h3 class="text-2xl font-semibold mb-6">Amazon Top Picks</h3>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <!-- Product Card -->
-        <div class="bg-white rounded-2xl shadow p-6">
-          <h4 class="font-bold text-lg mb-2">Echo Dot (5th Gen)</h4>
-          <p class="text-sm text-gray-600 mb-4">Smart speaker with Alexa for hands-free control, weather updates, and music streaming.</p>
-          <a href="https://www.amazon.in/dp/B09B8V1LZ3/?tag=yourstore-21" target="_blank" class="inline-block bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600">Buy on Amazon</a>
-        </div>
-
-        <div class="bg-white rounded-2xl shadow p-6">
-          <h4 class="font-bold text-lg mb-2">Fire TV Stick 4K</h4>
-          <p class="text-sm text-gray-600 mb-4">Stream in 4K with Alexa voice remote. Access Netflix, Prime Video, YouTube, and more.</p>
-          <a href="https://www.amazon.in/dp/B08XVYZ1Y5/?tag=yourstore-21" target="_blank" class="inline-block bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600">Buy on Amazon</a>
-        </div>
-
-        <div class="bg-white rounded-2xl shadow p-6">
-          <h4 class="font-bold text-lg mb-2">Hydro Flask Water Bottle</h4>
-          <p class="text-sm text-gray-600 mb-4">Durable stainless steel reusable bottle with double wall vacuum insulation for hot and cold drinks.</p>
-          <a href="https://www.amazon.in/dp/B07S9MPX7J/?tag=yourstore-21" target="_blank" class="inline-block bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600">Buy on Amazon</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Prime Video Section -->
-  <section id="prime" class="py-10 px-4">
-    <div class="container mx-auto">
-      <h3 class="text-2xl font-semibold mb-6">Stream with Prime</h3>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="bg-white rounded-2xl shadow p-6">
-          <h4 class="font-bold text-lg mb-2">The Marvelous Mrs. Maisel</h4>
-          <p class="text-sm text-gray-600 mb-4">Award-winning comedy-drama series about a housewife turned stand-up comedian in 1950s New York.</p>
-          <a href="https://www.amazon.in/gp/video/detail/B086VXVYCY/?tag=yourstore-21" target="_blank" class="inline-block bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700">Watch on Prime</a>
-        </div>
-
-        <div class="bg-white rounded-2xl shadow p-6">
-          <h4 class="font-bold text-lg mb-2">All or Nothing: Manchester City</h4>
-          <p class="text-sm text-gray-600 mb-4">Documentary series offering an inside look at Manchester City's historic 2017-18 season.</p>
-          <a href="https://www.amazon.in/gp/video/detail/B07G9YQX6R/?tag=yourstore-21" target="_blank" class="inline-block bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700">Watch on Prime</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-gray-800 text-white text-center py-6">
-    <p>&copy; 2025 Top Deals USA. This site contains affiliate links. We may earn a commission if you make a purchase through our links, at no extra cost to you.</p>
-  </footer>
-
+  </div>
 </body>
 </html>
+
+
+ 
