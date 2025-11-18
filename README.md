@@ -1,2 +1,0 @@
-# primetv
-huybg
